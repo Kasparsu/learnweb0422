@@ -26,3 +26,21 @@ div.flex {
 div.flex div {
    width:20%;
 }
+
+div.grid {
+   display: grid;
+   grid-template-columns: 50% 50% 100%;
+   grid-template-rows: 50% 50%;
+}
+div.grid div {
+   border: 1px solid black;
+   height:100px;
+   width:100px;
+}
+
+div.grid div.box1 {
+   border: 1px solid black;
+   grid-column-start: 1;
+   grid-row-start: 2;
+   grid-row-end: span 2;
+}
