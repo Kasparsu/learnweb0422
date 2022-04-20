@@ -1,27 +1,32 @@
+/* GENERAL */
+
 body {
     background-color: coral;     
- }
- #home-link {
-    color: red;
- }
- .text-white {
-    color: white;
- }
- .border {
-    border: 1px solid black;
-     /* border-width: 1px;
-     border-style: solid;
-     border-color: black; */
- }
- .border.text-white {
-    background-color: aqua;
- }
- a.text-white.border#home-link{
-     
- }
- h1 {
-    padding: 30px;
-    position: absolute;
-    top: 100;
-    
- }
+}
+
+
+
+#home-link {
+   color: red;
+}
+.text-white {
+   color: white;
+}
+.border {
+   border: 1px solid black;
+   /* border-width: 1px;
+   border-style: solid;
+   border-color: black; */
+}
+.border.text-white {
+   background-color: aqua;
+}
+a.text-white.border#home-link{
+   
+}
+h1 {
+   padding: 30px;
+   position: absolute;
+   top: 100;
+   
+}
