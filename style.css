@@ -19,3 +19,10 @@ nav ul li a {
    color: white;
    text-decoration: none;
 }
+div.flex {
+   display: flex;
+}
+
+div.flex div {
+   width:20%;
+}
