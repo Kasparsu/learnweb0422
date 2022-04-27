@@ -1,11 +1,12 @@
-let num = 1000000;
-while(num<100000){
-    num*=2;
-    console.log(num);
+let number = Math.floor(Math.random()*100)+1;
+let guess;
+while(number!=guess){
+    guess = parseInt(prompt('Arva number 1-100neni'));
+    if(number > guess){
+        alert('Suurem');
+    } else if(number < guess){
+        alert('Väiksem');
+    } else {
+        alert('Õige! Võitsid');
+    }
 }
-
-num = 1000000;
-do {
-    num*=2;
-    console.log(num);
-} while (num<100000)
