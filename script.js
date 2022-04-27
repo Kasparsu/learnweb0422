@@ -1,26 +1,12 @@
-let num = 0;
-num = num + 1;
-num += 1;
-num +=2;
-num++;
-num -= 3;
-num--;
-num *= 2;
-num /= 3;
-num = 8;
-num %= 2;
-num = 10;
-num = (10 + (2-1)) *3;
-//num = num > 5;
-//num = num < 5;
-//num = num == 10;
-//num = num =! 10;
-//num = num >= 10;
-//num = num <= 10;
-num = true && false;
-num = true && true && false;
-num = false || true;
-num = !false;
-num = !true;
-num = !(true && false) || false;
-console.log(num);
+let num = 11;
+
+if(num > 10){
+    console.log('Suurem');
+} else if(num == 10) {
+    console.log('Võrdne');
+} else {
+    console.log('Väiksem');
+}
+
+
+
