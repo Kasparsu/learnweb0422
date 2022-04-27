@@ -1,7 +1,11 @@
-let sum = 0;
-for(let i=0; i<1000; i++){
-    if(i%3==0 || i%5==0) {
-        sum+=i;
-    }
+let num = 1000000;
+while(num<100000){
+    num*=2;
+    console.log(num);
 }
-console.log(sum);
+
+num = 1000000;
+do {
+    num*=2;
+    console.log(num);
+} while (num<100000)
