@@ -1,12 +1,15 @@
-let num = 11;
-
-if(num > 10){
-    console.log('Suurem');
-} else if(num == 10) {
-    console.log('Võrdne');
-} else {
-    console.log('Väiksem');
+for(let i=0;i<10;i++){
+    console.log(i);
 }
 
+for(let i=10;i<20;i++){
+    console.log(i);
+}
 
+for(let i=10;i>0;i--){
+    console.log(i);
+}
 
+for(let i=1;i<2000;i*=2){
+    console.log(i);
+}
