@@ -1,37 +1,28 @@
+let nums = [1,2,3,4,5,6];
 
-function add(a, b){
-    return a+b;
-}
+let nums4 = nums.map(a => a*4);
 
-let divide = function(a,b) {
-    if(b!=0){
-        return a/b;
+let nums5 = nums.map(a => {
+    if(a%2==0){
+        return a*5;
     }
-    return NaN;
+    return a;
+});
+
+let odd = nums.filter(function(a) {
+    return a%2==1;
+});
+let odd2 = nums.filter(a => a%2==1);
+
+let sum = nums.reduce((lastValue,currentValue) => lastValue+currentValue);
+let total = nums.reduce((lastValue,currentValue) => lastValue*currentValue);
+
+for(let i = 0; i<nums.length;i++){
+    console.log(nums[i]);
 }
 
-let sub = (a,b) => a-b;
+nums.forEach(a => {
+    console.log(a);
+});
 
-let person = {
-    hello() {
-        console.log('hello');
-    } 
-}
-
-
-let sum = add(3,5);
-let sum2 = add(2,6);
-console.log(sum, sum2);
-let value = divide(4,0);
-console.log(value);
-value = sub(4,3);
-console.log(value);
-person.hello();
-
-function recursive(i){
-    console.log(i);
-    if(i<10){
-        recursive(i+1);
-    }
-}
-recursive(0);
+console.log(nums, nums4, nums5, odd, odd2, sum, total);
