@@ -1,7 +1,7 @@
-console.log({doc: document});
-let button = document.getElementById('button');
-
-button.addEventListener('click', evt => {
-    console.log(evt);
-    document.getElementById('message').innerHTML = 'Hello';
+let addItem = document.querySelector('#addItem');
+let newItem = document.querySelector('#newItem');
+let shoppingList = document.querySelector('#shoppingList');
+addItem.addEventListener('click', ()=> {
+    shoppingList.innerHTML += '<li>' + newItem.value + '</li>';
+    newItem.value = '';
 });
